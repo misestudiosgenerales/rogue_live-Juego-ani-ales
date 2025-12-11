@@ -1,0 +1,48 @@
+body{
+  background: linear-gradient(to bottom,
+#FFD39A 0%,     /* salmón claro */
+#FFAC5F 20%,     /* naranja */
+#FFEBA1 40%,     /* amarillo suave */
+#7EC76F 60%,     /* verde claro */
+#4B8F43 100%     /* verde oscuro */
+);
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+min-height: 100vh;
+
+font-family: "Poiret One", sans-serif;
+
+
+}
+h1,h2,h3,.btn{
+  font-family: 'Jersey 10', sans-serif;
+
+}
+button {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#GM{
+  font-family: "Sixtyfour Convergence", sans-serif;
+  
+}
+.Pantalla {
+  background-image: url('./img/fondo_html/portada.webp');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 80vh; /* Esto la hace ocupar el alto completo de la pantalla */
+}
+.Pantalla, .Pantalla1, .Pantalla2 {
+  min-height: 80vh; /* Esto la hace ocupar el alto completo de la pantalla */
+}
+#pantallaJuego {
+  display: none;
+}
+#gui{
+ background-color: RGB(235, 193, 117);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+
+}

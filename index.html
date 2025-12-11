@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Poiret+One&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+
+
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="./tablero.js"></script>
+    <script src="./Hormiga.js"></script>
+    <script src="./player.js"></script> 
+    <script src="./cell.js"></script>
+    <script src="./items.js"></script>
+    <script src="./Loot.js"></script>
+    <script src="./gui.js"></script>
+    <script src="./menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="Pantallas">
+        <div class="Pantalla  d-flex justify-content-center align-items-center m-3">
+          <div class="boton h-100  d-flex justify-content-center  align-items-center ">
+                <button type="button" onclick="Menu.pantallas('Pantalla1')"  class="btn btn-primary btn-lg">Empezar la aventura</button>
+              </div>
+        </div>
+      </div>  
+      <div id="pantallaJuego" style="display: none">
+          <div class="row justify-content-center m-4 p-5">
+            <h1 class="text-center">Corre a la Meta</h1>
+          </div>
+          <div class="row">
+            <div class="col-md d-flex justify-content-center">
+              <div id="game">
+            <script src="sketch.js"></script>
+              </div>
+            </div>
+            <div class="col-md" id="Inventario">
+              <div id="gui" class=" p-3 rounded">
+                <h3 class="text-center"id="Titulo">Inventario de @</h3>
+                <p>Leche: <span id="lecheCount">0</span> / <span id="lecheTotal">?</span></p>
+                <p>Huevos: <span id="huevosCount">0</span> / <span id="huevosTotal">?</span></p>
+                <p>Queso: <span id="quesoCount">0</span> / <span id="quesoTotal">?</span></p>
+                <hr>
+                <p>Monedas: <span id="monedasCount">0</span></p>
+                <button id="buyPlant" onclick="GUI.comprarPlanta()" class="btn btn-success btn-block">Comprar Planta (2 monedas)</button>
+              </div>
+            </div>
+          </div>
+          <div class="menuescape">
+          </div>
+        </div>
+    </div>
+   
+   
+   
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
